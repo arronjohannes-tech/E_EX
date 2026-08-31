@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Asteros Coffee – Premium äthiopischer Bio-Kaffee mit außergewöhnlichem Aroma, Herkunft und Lebensstil."
+    />
+    <title>Asteros Coffee | Premium Bio-Kaffee aus Äthiopien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-wrap">
+          <a href="#home" class="brand" aria-label="Asteros Coffee Home">
+            <span class="brand-mark">A</span>
+            <span class="brand-text">Asteros</span>
+          </a>
+
+          <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="#shop" data-i18n="nav.shop">Shop</a>
+            <a href="#story" data-i18n="nav.story">Unsere Geschichte</a>
+            <a href="#craft" data-i18n="nav.craft">Röstung</a>
+            <a href="#reviews" data-i18n="nav.reviews">Bewertungen</a>
+            <a href="#journal" data-i18n="nav.journal">Journal</a>
+          </nav>
+
+          <div class="nav-actions">
+            <button
+              class="icon-button"
+              data-i18n-aria="search.aria"
+              aria-label="Suche"
+            >
+              ⌕
+            </button>
+            <button
+              id="themeToggle"
+              class="icon-button"
+              data-i18n-aria="theme.aria"
+              aria-label="Design umschalten"
+            >
+              ☼
+            </button>
+            <div class="language-switcher">
+              <label
+                for="languageSelector"
+                class="sr-only"
+                data-i18n="language.label"
+                >Sprache</label
+              >
+              <select id="languageSelector" aria-label="Sprachwahl">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="nl">Nederlands</option>
+                <option value="pl">Polski</option>
+                <option value="pt">Português</option>
+                <option value="sv">Svenska</option>
+                <option value="da">Dansk</option>
+                <option value="no">Norsk</option>
+                <option value="fi">Suomi</option>
+                <option value="cs">Čeština</option>
+                <option value="sk">Slovenčina</option>
+                <option value="ro">Română</option>
+                <option value="hu">Magyar</option>
+                <option value="el">Ελληνικά</option>
+                <option value="tr">Türkçe</option>
+                <option value="hr">Hrvatski</option>
+                <option value="sl">Slovenščina</option>
+                <option value="et">Eesti</option>
+                <option value="lv">Latviešu</option>
+                <option value="lt">Lietuvių</option>
+                <option value="bg">Български</option>
+              </select>
+            </div>
+            <button
+              class="cart-pill"
+              data-i18n="nav.cart"
+              data-i18n-aria="cart.aria"
+              aria-label="Warenkorb"
+            >
+              Warenkorb <span id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="hero-glow"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow" data-i18n="hero.eyebrow">
+                Äthiopien · Bio · Premium
+              </p>
+              <h1 data-i18n="hero.title">
+                Aus den Bergen Äthiopiens. Für den perfekten Moment.
+              </h1>
+              <p class="lead" data-i18n="hero.lead">
+                100% Arabica, sanft geröstet und direkt aus kleinen,
+                biologischen Anbaugebieten – für einen Kaffee, der wahrhaft
+                originell und unverwechselbar schmeckt.
+              </p>
+
+              <div class="cta-row">
+                <a class="btn btn-primary" href="#shop" data-i18n="cta.discover"
+                  >Jetzt entdecken</a
+                >
+                <a class="btn btn-secondary" href="#story" data-i18n="cta.story"
+                  >Mehr über uns</a
+                >
+              </div>
+
+              <ul class="mini-trust" aria-label="Marktversprechen">
+                <li data-i18n="trust.bio">100% biologisch</li>
+                <li data-i18n="trust.fair">Fair gehandelt</li>
+                <li data-i18n="trust.fresh">Frisch geröstet</li>
+              </ul>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="coffee-card main-bag">
+                <div class="bag-top"></div>
+                <div class="bag-label">
+                  <span class="small">Asteros</span>
+                  <strong>Yirgacheffe</strong>
+                  <em>Blumig · Citrus · Honig</em>
+                </div>
+              </div>
+              <div class="floating-badge origin-badge" data-i18n="hero.origin">
+                Origin: Sidama
+              </div>
+              <div class="floating-badge rating-badge">4.9/5 ★</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-strip">
+          <div class="container stats-grid reveal">
+            <div>
+              <strong>12+</strong>
+              <span data-i18n="stats.one.label">Sorten aus Äthiopien</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span data-i18n="stats.two.label">Arabica – ohne Pestizide</span>
+            </div>
+            <div>
+              <strong>48h</strong>
+              <span data-i18n="stats.three.label">Frisch versandt</span>
+            </div>
+            <div>
+              <strong>4.9</strong>
+              <span data-i18n="stats.four.label">Bewertung unserer Kunden</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="features section-spacing" id="craft">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="features.eyebrow">
+                Der Asteros Unterschied
+              </p>
+              <h2 data-i18n="features.title">
+                Mehr als Kaffee. Ein Erlebnis aus Herkunft, Qualität und Ritual.
+              </h2>
+            </div>
+
+            <div class="feature-grid">
+              <article class="feature-card reveal">
+                <div class="feature-icon">01</div>
+                <h3 data-i18n="features.1.title">Reine Herkunft</h3>
+                <p data-i18n="features.1.text">
+                  Wir beziehen unsere Bohnen aus bewährten Anbaugebieten in
+                  Äthiopien, wo die Qualität und Tradition im Mittelpunkt
+                  stehen.
+                </p>
+              </article>
+
+              <article class="feature-card reveal">
+                <div class="feature-icon">02</div>
+                <h3 data-i18n="features.2.title">Bio ohne Kompromisse</h3>
+                <p data-i18n="features.2.text">
+                  Unsere Bohnen wachsen ohne chemische Pestizide und in einem
+                  respektvollen, ökologisch verantwortungsvollen Umfeld.
+                </p>
+              </article>
+
+              <article class="feature-card reveal">
+                <div class="feature-icon">03</div>
+                <h3 data-i18n="features.3.title">Frische & Aroma</h3>
+                <p data-i18n="features.3.text">
+                  Individuell geröstet und schnell verpackt, damit das Aroma
+                  nach der Ernte exakt zur Tasse kommt.
+                </p>
+              </article>
+
+              <article class="feature-card reveal">
+                <div class="feature-icon">04</div>
+                <h3 data-i18n="features.4.title">Erlebnis & Ritual</h3>
+                <p data-i18n="features.4.text">
+                  Von der ersten Tasse bis zur täglichen Routine – wir schaffen
+                  ein Premium-Erlebnis mit Geschmack, Stil und Sinn.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience section-spacing">
+          <div class="container experience-grid">
+            <div class="experience-copy reveal">
+              <p class="eyebrow" data-i18n="experience.eyebrow">
+                Dein persönlicher Kaffee
+              </p>
+              <h2 data-i18n="experience.title">
+                Finde deine perfekte Tasse in weniger als 30 Sekunden.
+              </h2>
+              <p data-i18n="experience.text">
+                Wähle deinen Favorit unter Geschmack, Brew-Methode und Moment –
+                und wir empfehlen dir die passende Asteros-Sorte.
+              </p>
+
+              <div class="quiz-panel" id="tasteQuiz">
+                <div class="quiz-step active" data-step="1">
+                  <label data-i18n="quiz.profile.label"
+                    >Wie magst du deinen Kaffee?</label
+                  >
+                  <div class="option-group" data-question="profile">
+                    <button
+                      class="option-btn active"
+                      data-value="blumig"
+                      data-i18n="quiz.option.blumig"
+                    >
+                      Blumig
+                    </button>
+                    <button
+                      class="option-btn"
+                      data-value="süss"
+                      data-i18n="quiz.option.süss"
+                    >
+                      Süss
+                    </button>
+                    <button
+                      class="option-btn"
+                      data-value="kräftig"
+                      data-i18n="quiz.option.kräftig"
+                    >
+                      Kräftig
+                    </button>
+                  </div>
+                </div>
+
+                <div class="quiz-step" data-step="2">
+                  <label data-i18n="quiz.brew.label"
+                    >Welche Zubereitung bevorzugst du?</label
+                  >
+                  <div class="option-group" data-question="brew">
+                    <button
+                      class="option-btn active"
+                      data-value="filter"
+                      data-i18n="quiz.option.filter"
+                    >
+                      Filter
+                    </button>
+                    <button
+                      class="option-btn"
+                      data-value="espresso"
+                      data-i18n="quiz.option.espresso"
+                    >
+                      Espresso
+                    </button>
+                    <button
+                      class="option-btn"
+                      data-value="crema"
+                      data-i18n="quiz.option.crema"
+                    >
+                      Crema
+                    </button>
+                  </div>
+                </div>
+
+                <div class="quiz-step result-box" data-step="3">
+                  <span data-i18n="quiz.result">Unsere Empfehlung</span>
+                  <h3 id="recommendationTitle">Yirgacheffe</h3>
+                  <p id="recommendationText">
+                    Blumig, süß und äußerst aromatisch – perfekt für ruhige
+                    Morgenrituale.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-visual reveal">
+              <div class="experience-card">
+                <div class="mini-score" data-i18n="experience.card.title">
+                  Asteros Match
+                </div>
+                <h3 data-i18n="experience.card.score">92%</h3>
+                <p data-i18n="experience.card.text">
+                  Perfekt für deinen Geschmack – basierend auf Aroma, Körper und
+                  Brew-Methode.
+                </p>
+                <ul>
+                  <li data-i18n="experience.card.item1">
+                    Blumig · fruchtig · elegant
+                  </li>
+                  <li data-i18n="experience.card.item2">
+                    Ohne künstliche Zusätze
+                  </li>
+                  <li data-i18n="experience.card.item3">
+                    Ideal für die morgendliche Routine
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="shop section-spacing" id="shop">
+          <div class="container">
+            <div class="section-heading reveal shop-header">
+              <div>
+                <p class="eyebrow" data-i18n="shop.eyebrow">Unsere Sammlung</p>
+                <h2 data-i18n="shop.title">Entdecke die perfekten Aromen.</h2>
+              </div>
+              <div class="filter-chips" aria-label="Filter für Produkte">
+                <button
+                  class="chip active"
+                  data-filter="all"
+                  data-i18n="filter.all"
+                >
+                  Alle
+                </button>
+                <button
+                  class="chip"
+                  data-filter="espresso"
+                  data-i18n="filter.espresso"
+                >
+                  Espresso
+                </button>
+                <button
+                  class="chip"
+                  data-filter="filter"
+                  data-i18n="filter.filter"
+                >
+                  Filter
+                </button>
+                <button
+                  class="chip"
+                  data-filter="crema"
+                  data-i18n="filter.crema"
+                >
+                  Crema
+                </button>
+              </div>
+            </div>
+
+            <div class="product-grid reveal">
+              <article class="product-card" data-category="espresso">
+                <span class="product-tag" data-i18n="filter.espresso"
+                  >Espresso</span
+                >
+                <div class="product-image image-1"></div>
+                <div class="product-body">
+                  <h3 data-i18n="product.akosua.title">Akosua Espresso</h3>
+                  <p data-i18n="product.akosua.text">
+                    Mit intensiver Süße, kakaonotem Körper und würzigem
+                    Abschluss.
+                  </p>
+                  <div class="product-meta">
+                    <strong>€ 18,90</strong>
+                    <div class="product-actions">
+                      <button
+                        class="quick-view-btn"
+                        data-product="Akosua Espresso"
+                        data-price="€ 18,90"
+                        data-description="Mit intensiver Süße, kakaonotem Körper und würzigem Abschluss."
+                        data-image="image-1"
+                        data-i18n="product.details"
+                      >
+                        Details
+                      </button>
+                      <button
+                        class="buy-btn"
+                        data-product="Akosua Espresso"
+                        data-i18n="product.add"
+                      >
+                        In den Warenkorb
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="filter">
+                <span class="product-tag" data-i18n="filter.filter"
+                  >Filter</span
+                >
+                <div class="product-image image-2"></div>
+                <div class="product-body">
+                  <h3 data-i18n="product.gorahgorah.title">Gorahgorah</h3>
+                  <p data-i18n="product.gorahgorah.text">
+                    Blumig, zitrisch und elegant – ideal für die goldene
+                    Filterbrühung.
+                  </p>
+                  <div class="product-meta">
+                    <strong>€ 19,50</strong>
+                    <div class="product-actions">
+                      <button
+                        class="quick-view-btn"
+                        data-product="Gorahgorah Filter"
+                        data-price="€ 19,50"
+                        data-description="Blumig, zitrisch und elegant – ideal für die goldene Filterbrühung."
+                        data-image="image-2"
+                        data-i18n="product.details"
+                      >
+                        Details
+                      </button>
+                      <button
+                        class="buy-btn"
+                        data-product="Gorahgorah Filter"
+                        data-i18n="product.add"
+                      >
+                        In den Warenkorb
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="crema">
+                <span class="product-tag" data-i18n="filter.crema">Crema</span>
+                <div class="product-image image-3"></div>
+                <div class="product-body">
+                  <h3 data-i18n="product.dishttaginaa.title">Dishttaginaa</h3>
+                  <p data-i18n="product.dishttaginaa.text">
+                    Sanfter Körper, honigartige Süße und eine ruhige, cremige
+                    Textur.
+                  </p>
+                  <div class="product-meta">
+                    <strong>€ 17,90</strong>
+                    <div class="product-actions">
+                      <button
+                        class="quick-view-btn"
+                        data-product="Dishttaginaa Crema"
+                        data-price="€ 17,90"
+                        data-description="Sanfter Körper, honigartige Süße und eine ruhige, cremige Textur."
+                        data-image="image-3"
+                        data-i18n="product.details"
+                      >
+                        Details
+                      </button>
+                      <button
+                        class="buy-btn"
+                        data-product="Dishttaginaa Crema"
+                        data-i18n="product.add"
+                      >
+                        In den Warenkorb
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="product-card" data-category="filter">
+                <span class="product-tag" data-i18n="filter.filter"
+                  >Filter</span
+                >
+                <div class="product-image image-4"></div>
+                <div class="product-body">
+                  <h3 data-i18n="product.yirgacheffe.title">Yirgacheffe</h3>
+                  <p data-i18n="product.yirgacheffe.text">
+                    Ein floraler Klassiker mit Bergamotte, Honig und klassischem
+                    Charakter.
+                  </p>
+                  <div class="product-meta">
+                    <strong>€ 21,90</strong>
+                    <div class="product-actions">
+                      <button
+                        class="quick-view-btn"
+                        data-product="Yirgacheffe"
+                        data-price="€ 21,90"
+                        data-description="Ein floraler Klassiker mit Bergamotte, Honig und klassischem Charakter."
+                        data-image="image-4"
+                        data-i18n="product.details"
+                      >
+                        Details
+                      </button>
+                      <button
+                        class="buy-btn"
+                        data-product="Yirgacheffe"
+                        data-i18n="product.add"
+                      >
+                        In den Warenkorb
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="story section-spacing" id="story">
+          <div class="container story-grid">
+            <div class="story-visual reveal">
+              <div class="story-photo"></div>
+            </div>
+
+            <div class="story-copy reveal">
+              <p class="eyebrow" data-i18n="story.eyebrow">Unsere Mission</p>
+              <h2 data-i18n="story.title">
+                Wir bringen den authentischen Geschmack Äthiopiens in deine
+                Tasse.
+              </h2>
+              <p data-i18n="story.text1">
+                Asteros Coffee verbindet die tiefe Tradition äthiopischer
+                Kaffeesorten mit einem modernen Premium-Erlebnis. Jeder Kaffee
+                wird sorgfältig ausgewählt, mit Respekt für die Herkunft und mit
+                Leidenschaft für das perfekte Aroma geröstet.
+              </p>
+              <p data-i18n="story.text2">
+                Unser Ziel ist nicht nur ein guter Kaffeegenuss, sondern ein
+                Ritual mit Geschichte, Klarheit und Qualität – von der Ernte bis
+                zur letzten Tasse.
+              </p>
+              <div class="story-points">
+                <span data-i18n="story.tag1">Direkt aus Äthiopien</span>
+                <span data-i18n="story.tag2">Biologisch angebaut</span>
+                <span data-i18n="story.tag3">Small-Batch Röstung</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ritual section-spacing">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="ritual.eyebrow">
+                Das Asteros Ritual
+              </p>
+              <h2 data-i18n="ritual.title">
+                Ein Premium-Erlebnis, das jeden Morgen besser macht.
+              </h2>
+            </div>
+
+            <div class="ritual-grid">
+              <div class="ritual-panel reveal">
+                <h3 data-i18n="ritual.1.title">1. Wähle deine Sorte</h3>
+                <p data-i18n="ritual.1.text">
+                  Entdecke florale, süße oder kräftige Profile – passend zu
+                  deiner Tasse.
+                </p>
+              </div>
+              <div class="ritual-panel reveal">
+                <h3 data-i18n="ritual.2.title">2. Rüste dich aus</h3>
+                <p data-i18n="ritual.2.text">
+                  Für Filter, Espresso oder Kalita – wir helfen dir dabei, den
+                  perfekten Brew zu finden.
+                </p>
+              </div>
+              <div class="ritual-panel reveal">
+                <h3 data-i18n="ritual.3.title">3. Genieße den Moment</h3>
+                <p data-i18n="ritual.3.text">
+                  Ein Kaffee, der nicht nur schmeckt, sondern anregt, beruhigt
+                  und inspiriert.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews section-spacing" id="reviews">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="reviews.eyebrow">Kundenstimmen</p>
+              <h2 data-i18n="reviews.title">Was unsere Community sagt.</h2>
+            </div>
+
+            <div class="testimonial-slider reveal">
+              <article class="testimonial active">
+                <p data-i18n="reviews.1.text">
+                  „Der Geschmack ist unglaublich klar, weich und hochwertig.
+                  Mein neues Lieblingsgetränk am Morgen.“
+                </p>
+                <div class="person">
+                  <strong data-i18n="reviews.1.name">Marta K.</strong>
+                  <span data-i18n="reviews.1.role">Designer</span>
+                </div>
+              </article>
+              <article class="testimonial">
+                <p data-i18n="reviews.2.text">
+                  „Asteros ist für mich die Art von Kaffee, die man sofort
+                  spürt. Natürlich, elegant und ganz ohne künstlichen
+                  Nachgeschmack.“
+                </p>
+                <div class="person">
+                  <strong data-i18n="reviews.2.name">Daniel A.</strong>
+                  <span data-i18n="reviews.2.role">Architekt</span>
+                </div>
+              </article>
+              <article class="testimonial">
+                <p data-i18n="reviews.3.text">
+                  „Die Bohnen sind frisch, die Verpackung hochwertig und der
+                  Geschmack spricht für sich. Ein Premium-Produkt mit Herz.“
+                </p>
+                <div class="person">
+                  <strong data-i18n="reviews.3.name">Selam T.</strong>
+                  <span data-i18n="reviews.3.role">Produktmanagerin</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="journal section-spacing" id="journal">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" data-i18n="journal.eyebrow">Journal</p>
+              <h2 data-i18n="journal.title">
+                Mehr als Kaffee: Wissen, Leidenschaft und Storytelling.
+              </h2>
+            </div>
+
+            <div class="journal-grid">
+              <article class="journal-card reveal">
+                <div class="journal-image image-5"></div>
+                <div class="journal-content">
+                  <span data-i18n="journal.1.tag">Herkunft</span>
+                  <h3 data-i18n="journal.1.title">
+                    Warum äthiopischer Kaffee so besonders ist
+                  </h3>
+                  <a href="#" data-i18n="journal.1.link">Mehr erfahren</a>
+                </div>
+              </article>
+              <article class="journal-card reveal">
+                <div class="journal-image image-6"></div>
+                <div class="journal-content">
+                  <span data-i18n="journal.2.tag">Röstung</span>
+                  <h3 data-i18n="journal.2.title">
+                    So entsteht die perfekte Balance aus Aroma und Körper
+                  </h3>
+                  <a href="#" data-i18n="journal.2.link">Mehr erfahren</a>
+                </div>
+              </article>
+              <article class="journal-card reveal">
+                <div class="journal-image image-7"></div>
+                <div class="journal-content">
+                  <span data-i18n="journal.3.tag">Ritual</span>
+                  <h3 data-i18n="journal.3.title">
+                    Der Kaffee-Morgen, der wirklich bewusst schmeckt
+                  </h3>
+                  <a href="#" data-i18n="journal.3.link">Mehr erfahren</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="subscribe section-spacing">
+          <div class="container subscribe-box reveal">
+            <div>
+              <p class="eyebrow" data-i18n="newsletter.eyebrow">
+                Asteros Insider
+              </p>
+              <h2 data-i18n="newsletter.title">
+                Erhalte exklusive Angebote und neue Sorten zuerst.
+              </h2>
+            </div>
+            <form id="newsletterForm" class="newsletter-form">
+              <input
+                type="email"
+                data-i18n-placeholder="newsletter.placeholder"
+                placeholder="Deine E-Mail-Adresse"
+                aria-label="E-Mail-Adresse"
+                required
+              />
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-i18n="newsletter.button"
+              >
+                Anmelden
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <a href="#home" class="brand footer-brand">
+              <span class="brand-mark">A</span>
+              <span class="brand-text">Asteros</span>
+            </a>
+            <p data-i18n="footer.description">
+              Premium äthiopischer Bio-Kaffee mit Herkunft, Charakter und
+              Leidenschaft.
+            </p>
+          </div>
+
+          <div>
+            <h4 data-i18n="footer.shop">Shop</h4>
+            <ul>
+              <li><a href="#shop" data-i18n="filter.espresso">Espresso</a></li>
+              <li><a href="#shop" data-i18n="filter.filter">Filter</a></li>
+              <li><a href="#shop" data-i18n="filter.crema">Crema</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 data-i18n="footer.company">Unternehmen</h4>
+            <ul>
+              <li>
+                <a href="#story" data-i18n="nav.story">Unsere Geschichte</a>
+              </li>
+              <li><a href="#craft" data-i18n="nav.craft">Röstung</a></li>
+              <li><a href="#journal" data-i18n="nav.journal">Journal</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 data-i18n="footer.contact">Kontakt</h4>
+            <ul>
+              <li>
+                <a
+                  href="mailto:hello@asteros-coffee.com"
+                  data-i18n="footer.email"
+                  >hello@asteros-coffee.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+491234567890" data-i18n="footer.phone"
+                  >+49 123 456 7890</a
+                >
+              </li>
+              <li data-i18n="footer.location">Berlin · Addis Ababa</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <span>© 2026 Asteros Coffee</span>
+          <span data-i18n="footer.legal">Datenschutz · AGB · Impressum</span>
+        </div>
+      </footer>
+    </div>
+
+    <div id="productModal" class="modal" aria-hidden="true">
+      <div class="modal-card">
+        <button id="closeModal" class="modal-close" aria-label="Schließen">
+          ×
+        </button>
+        <div class="modal-content">
+          <div id="modalProductImage" class="modal-image"></div>
+          <div class="modal-body">
+            <p class="eyebrow" data-i18n="modal.signature">Asteros Signature</p>
+            <h3 id="modalProductTitle">Akosua Espresso</h3>
+            <p id="modalProductDescription">
+              Mit intensiver Süße, kakaonotem Körper und würzigem Abschluss.
+            </p>
+            <div class="modal-price">
+              <strong id="modalProductPrice">€ 18,90</strong>
+              <button
+                class="btn btn-primary quick-add"
+                data-product="Akosua Espresso"
+                data-i18n="modal.add"
+              >
+                In den Warenkorb
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartOverlay" class="modal" aria-hidden="true"></div>
+
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Warenkorb">
+      <div class="cart-header">
+        <h3 data-i18n="cart.title">Dein Warenkorb</h3>
+        <button
+          class="icon-button cart-close"
+          id="closeCart"
+          aria-label="Warenkorb schließen"
+        >
+          ✕
+        </button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span data-i18n="cart.total">Gesamt</span>
+          <span id="cartTotal">€ 0,00</span>
+        </div>
+        <button class="btn btn-primary" data-i18n="cart.checkout">
+          Zur Kasse
+        </button>
+      </div>
+    </aside>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
